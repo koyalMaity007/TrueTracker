@@ -1,0 +1,72 @@
+function updateAnalytics() {
+
+  const incomeTotal =
+    transactions
+      .filter(t => t.type === "income")
+      .reduce((a,b)=>a+b.amount,0);
+
+  const expenseTotal =
+    transactions
+      .filter(t => t.type === "expense")
+      .reduce((a,b)=>a+b.amount,0);
+
+  const balanceTotal =
+    incomeTotal - expenseTotal;
+
+  const savingsPercent =
+    incomeTotal > 0
+      ? (balanceTotal / incomeTotal) * 100
+      : 0;
+
+  savingRate.innerText =
+    `${Math.max(0,savingsPercent).toFixed(0)}%`;
+
+  if (balanceTotal < 0) {
+
+    financialHealth.innerText =
+      "Overspending ⚠️";
+
+  } else if (savingsPercent > 50) {
+
+    financialHealth.innerText =
+      "Excellent";
+
+  } else {
+
+    financialHealth.innerText =
+      "Stable";
+  }
+
+  updateTopCategory();
+}
+
+function updateTopCategory() {
+
+  const totals = {};
+
+  transactions.forEach(t => {
+
+    if (t.type === "expense") {
+
+      totals[t.category] =
+        (totals[t.category] || 0)
+        + t.amount;
+    }
+  });
+
+  let top = "";
+  let max = 0;
+
+  for (let cat in totals) {
+
+    if (totals[cat] > max) {
+
+      max = totals[cat];
+
+      top = cat;
+    }
+  }
+
+  topCategory.innerText =
+    top || "No data";
+}
