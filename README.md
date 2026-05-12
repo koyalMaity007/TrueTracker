@@ -112,4 +112,4 @@ All data is stored locally in your browser using LocalStorage. Clearing browser 
 If you like this project, consider starring the repo and sharing it.
 
 ---
-```
+
