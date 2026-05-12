@@ -2,8 +2,13 @@
 
 ### Modern finance made simple.
 
-TrueTrackr is a futuristic personal finance tracker built using **HTML, CSS, JavaScript, and Chart.js**.  
-It helps users manage income and expenses with real-time analytics, interactive charts, financial insights, and a sleek neon glassmorphism UI.
+TrueTrackr is a modern finance tracker built with HTML, CSS, JavaScript, and Chart.js. It helps users manage income and expenses with real-time balance updates, interactive analytics, savings insights, and beautiful neon glassmorphism UI — making budgeting simple, smart, and visually engaging.
+
+---
+
+# 🌐 Live Demo
+
+🔗 https://koyalmaity007.github.io/TrueTracker/
 
 ---
 
@@ -28,13 +33,13 @@ It helps users manage income and expenses with real-time analytics, interactive 
 ```bash
 TrueTrackr/
 │
+├── Truetrakerscreenshot.png
 ├── index.html
 ├── tracker.css
+├── README.md
 │
-├── js/
-│   ├── tracker.js
-│   ├── charts.js
-│   ├── analytics.js
-│   └── main.js
-│
-└── README.md
+└── js/
+    ├── tracker.js
+    ├── charts.js
+    ├── analytics.js
+    └── main.js
