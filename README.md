@@ -9,7 +9,7 @@ It helps users manage income and expenses with real-time updates, interactive an
 
 ## 🌐 Live Demo
 
-🔗 https://koyalmaity007.github.io/TrueTracker/tracker.html
+[Open TrueTrackr](https://koyalmaity007.github.io/TrueTracker/tracker.html)
 
 ---
 
