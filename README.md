@@ -113,7 +113,3 @@ If you like this project, consider starring the repo and sharing it.
 
 ---
 ```
-
-If you want next level upgrade, I can also:
-- turn this into a **viral GitHub README (with badges + animations + screenshots layout)**
-- or redesign your project UI to look like **Stripe / Razorpay dashboard style**
