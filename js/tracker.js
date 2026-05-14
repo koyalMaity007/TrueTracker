@@ -331,4 +331,5 @@ function updateValues() {
     topCategory.innerText =
       "No data";
   }
+  
 }
